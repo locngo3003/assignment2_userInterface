@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7afa8f0-0911-44c7-aca4-009b00e7689c" name="Default Changelist" comment="" />
+    <list default="true" id="e7afa8f0-0911-44c7-aca4-009b00e7689c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/TestPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +15,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -21,7 +27,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gTycEUFUoy8M4S4bo32YXYqDgt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -83,7 +93,7 @@
       <workItem from="1599690131856" duration="123000" />
       <workItem from="1599691880696" duration="12956000" />
       <workItem from="1599712694220" duration="16352000" />
-      <workItem from="1599779514315" duration="8206000" />
+      <workItem from="1599779514315" duration="8590000" />
     </task>
     <servers />
   </component>
@@ -95,6 +105,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="479" y="327" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1598157773795" />
+    <state x="534" y="346" key="Github.ShareDialog" timestamp="1599788840790">
+      <screen x="0" y="23" width="1440" height="838" />
+    </state>
+    <state x="534" y="346" key="Github.ShareDialog/0.23.1440.838@0.23.1440.838" timestamp="1599788840790" />
+    <state x="459" y="154" key="Github.UntrackedFilesDialog" timestamp="1599788848080">
+      <screen x="0" y="23" width="1440" height="838" />
+    </state>
+    <state x="459" y="154" key="Github.UntrackedFilesDialog/0.23.1440.838@0.23.1440.838" timestamp="1599788848080" />
     <state width="1210" height="270" key="GridCell.Tab.0.bottom" timestamp="1599706613906">
       <screen x="0" y="23" width="1440" height="838" />
     </state>

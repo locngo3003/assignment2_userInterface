@@ -14,6 +14,7 @@
             cases = getCompletedCase($("#completed_case").val());
             console.log("case:",cases)
 
+
             i = 0;
             while (i < cases.length){
                 closedCase = cases[i];
@@ -27,13 +28,13 @@
                     $("#status").text(case12.Status);
                     clientInformation = case12.Client;
                     allocation = assignedAllocation($("#completed_case").val());
+                    assignmentinfo =assignedAssignment2($("#completed_case").val());
+                    paymentInfo = assignedPayment($("#completed_case").val());
+                    console.log('assignment',assignmentinfo)
+                    console.log('allocation',allocation)
+                    console.log('paymentInfo',paymentInfo)
 
-                    j = 0;
-                    while (j < allocation.length) {
-                        equipment12 = allocation[j];
-                        $("#allocate_equipment").append("<option value='" + equipment12.id + "'>"+ "Equipment ID: " + equipment12.Equipment + "| Equipment date " + equipment12.AllocationDate + "</option>");
-                        j = j + 1;
-                    }
+
                     $.ajax({
                         type: 'Get',
                         dataType: 'JSON',
@@ -49,29 +50,91 @@
                         }
                     });
 
+
+                    $(document).ready(function () {
+                        $("#but_close").click(function () {
+
+                            j = 0;
+                            h=0;
+                            k=0;
+                            while (j < paymentInfo.length) {
+                                paymentID = paymentInfo[j].PaymentID;
+
+                                j++;
+
+
+                            $.ajax({
+                                type: 'DELETE',
+                                dataType: 'JSON',
+                                url: 'https://bigeye3.herokuapp.com/api/payments/' + paymentID,
+                                success: function (data) {
+                                    alert('payment  removed successfully');
+                                    location.reload();
+                                },
+                                error: function (err) {
+                                    console.log(err);
+                                    errors = JSON.parse(err.responseText);
+                                    console.log(errors);
+                                    $("#department_id_input_err").text(errors.name);
+                                }
+                            });
+                        }
+
+                            while (h < allocation.length) {
+                                allocationinfor = allocation[h].id;
+
+                                h++;
+
+
+                                $.ajax({
+                                    type: 'DELETE',
+                                    dataType: 'JSON',
+                                    url: 'https://bigeye3.herokuapp.com/api/allocations/' + allocationinfor,
+                                    success: function (data) {
+                                        alert('allocation  removed successfully');
+                                        location.reload();
+                                    },
+                                    error: function (err) {
+                                        console.log(err);
+                                        errors = JSON.parse(err.responseText);
+                                        console.log(errors);
+                                        $("#department_id_input_err").text(errors.name);
+                                    }
+                                });
+                            }
+                            while (k < assignmentinfo.length) {
+                                Assignmentinfo = assignmentinfo[k].id;
+
+                                k++;
+
+
+                                $.ajax({
+                                    type: 'DELETE',
+                                    dataType: 'JSON',
+                                    url: 'https://bigeye3.herokuapp.com/api/assignments/' + Assignmentinfo,
+                                    success: function (data) {
+                                        alert('assignment  removed successfully');
+                                        location.reload();
+                                    },
+                                    error: function (err) {
+                                        console.log(err);
+                                        errors = JSON.parse(err.responseText);
+                                        console.log(errors);
+                                        $("#department_id_input_err").text(errors.name);
+                                    }
+                                });
+                            }
+
+
+                        });
+
+                    });
+
                 });
 
             };
-            $(document).ready(function () {
-                $("#but_close").click(function () {
-                    closecase      = $("#completed_case").val();
-                    $.ajax({
-                        type: 'DELETE',
-                        dataType: 'JSON',
-                        url: 'https://bigeye3.herokuapp.com/api/assignments/'+closecase,
-                        success: function (data) {
-                            alert('Assignment  removed successfully');
-                            location.reload();
-                        },
-                        error: function (err) {
-                            console.log(err);
-                            errors = JSON.parse(err.responseText);
-                            console.log(errors);
-                            $("#department_id_input_err").text(errors.name);
-                        }
-                    });
-                });
-            });
+
+
         })
     </script>
 </head>

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7afa8f0-0911-44c7-aca4-009b00e7689c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TestPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecases/closeCase.html" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/closeCase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecases/printInvoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/usecases/printInvoice.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -93,7 +96,8 @@
       <workItem from="1599690131856" duration="123000" />
       <workItem from="1599691880696" duration="12956000" />
       <workItem from="1599712694220" duration="16352000" />
-      <workItem from="1599779514315" duration="8590000" />
+      <workItem from="1599779514315" duration="8839000" />
+      <workItem from="1599908680016" duration="12404000" />
     </task>
     <servers />
   </component>
@@ -101,6 +105,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="445" y="251" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599911389453">
+      <screen x="0" y="23" width="1440" height="838" />
+    </state>
+    <state x="445" y="251" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.838@0.23.1440.838" timestamp="1599911389453" />
     <state x="479" y="327" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1598157773795">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

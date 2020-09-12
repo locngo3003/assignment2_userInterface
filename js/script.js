@@ -136,6 +136,35 @@ function assignedAssignment(Investigator){
     });
     return assessments;
 }
+
+function assignedAssignment2(case2){
+    //return assessment objects
+    assessments = [];
+    $.ajax({
+        type: 'Get',
+        dataType: 'JSON',
+        async:false,
+        url: 'https://bigeye3.herokuapp.com/api/assignments/',
+        success: function (data) {
+            // location.reload();
+            i = 0;
+            while (i<data.length){
+                assignment = data[i];
+                if (assignment.Case == case2){
+                    assessments.push(assignment);
+                }
+                i=i+1;
+            }
+
+        },
+        error: function (err) {
+            console.log(err);
+        }
+
+    });
+    return assessments;
+}
+
 function assignedAssignment2(Case){
     //return assessment objects
     assessments = [];

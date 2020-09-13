@@ -247,6 +247,34 @@ function assignedPayment(Case){
     });
     return payments;
 }
+function getAssignmentByInvestigator(investigator){
+
+    assignments = [];
+    $.ajax({
+        type: 'Get',
+        dataType: 'JSON',
+        async:false,
+        url: 'https://bigeye3.herokuapp.com/api/assignments/',
+        success: function (data) {
+            // location.reload();
+            i = 0;
+            while (i<data.length){
+                assignment = data[i];
+                if (assignment.Investigator == investigator){
+                    assignments.push(assignment);
+                }
+                i=i+1;
+            }
+
+        },
+        error: function (err) {
+            console.log(err);
+        }
+
+    });
+    return assignments;
+}
+
 function assignedclient(Client1){
     //return assessment objects
     clients = [];

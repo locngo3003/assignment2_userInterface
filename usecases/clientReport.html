@@ -33,7 +33,7 @@
                                 " | Email Address: " + client1.EmailAddress +
                                 " | Client Status " + client1.ClientStatus +"<br>" );
 
-                            cases = getEmployees(client1.ClientID);
+                            cases = getclients(client1.ClientID);
                             k = 0;
                             while (k<cases.length){
                                 $("#department_report").append("<br />"+
@@ -54,7 +54,7 @@
 
         });
 
-        function getEmployees(ClientID) {
+        function getclients(ClientID) {
             cases = [];
             $.ajax({
                 type: 'Get',
@@ -84,7 +84,7 @@
     </script>
 </head>
 <body>
-<button id="show_report">Display report</button>
+<button id="show_report">Display client report</button>
 <button ><a href="/assignment2_userInterface/index.html">RETURN</a></button>
 <div id = "department_report" style="width: 100px;width: 1000px;background-color: aqua">
 </div>
